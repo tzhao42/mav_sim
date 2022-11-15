@@ -1,0 +1,15 @@
+name: mavenv
+dependencies:
+  - python=3.8.10
+  - pip
+  - pip:
+    - -e .
+    # dev tools
+    - autoflake # Automatically remove unused imports, variables, etc
+    - black # Autoformat
+    - flake8 # Faster pylint, with fewer false positives
+    - isort # Automatically sort imports
+    - mypy # Type check
+    - pydocstringformatter # Automated pep257
+    - pylint # Linting
+    - pyupgrade # Automated upgrade to newer python syntax
